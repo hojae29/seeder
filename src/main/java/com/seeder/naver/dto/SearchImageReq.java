@@ -10,7 +10,7 @@ import org.springframework.util.LinkedMultiValueMap;
 @NoArgsConstructor
 public class SearchImageReq {
     private String query;
-    private Integer display = 4;
+    private Integer display = 1;
     private Integer start = 1;
     private String sort = "sim";
     private String filter = "all";

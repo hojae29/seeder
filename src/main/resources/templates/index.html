@@ -5,32 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="main.css"/>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="/css/index.css"/>
     <link rel="stylesheet" href="/css/modal.css"/>
 
+    <script src="/js/jquery-3.6.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
 </head>
 
 <body>
-
-<div class="modal_overlay">
-    <div style="position: absolute;">
-        <div class="modal_close">
-            <button id="modal_close">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF">
-                    <path d="M0 0h24v24H0V0z" fill="none"/>
-                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/>
-                </svg>
-            </button>
-        </div>
-        <div class="modal_window">
-
-        </div>
-    </div>
-</div>
 
 <div class="main_container">
     <nav>
@@ -43,7 +28,7 @@
                     <input placeholder="검색하기"/>
                 </div>
                 <div>
-                    <button class="login_btn">로그인</button>
+                    <button id="login_btn">로그인</button>
                 </div>
             </div>
         </div>
@@ -61,48 +46,59 @@
     </div>
 
 
-    <div class="popular_content_backgournd">
+    <div class="popular_content_background">
         <div class="popular_content_container">
             <div>
                 <h2>최근 인기 글</h2>
             </div>
-            <div class="content_box_wrap">
-                <div class="content_box">
-                    <div class="image_box"></div>
-                    <div class="content_title">개발자 원어민 영어 회화 과외</div>
-                    <div>
-                        <p class="content_text">안녕하세요! 혹시 개발관련 영어회화 과
-                            외에 관심 있는 사람있을까요? 전 개발자
-                            로 일했고 한국어 보다 영어를 잘하는 ...</p>
+            <div style="position:relative;">
+                <div class="swiper third-swiper" style="position:static">
+                    <div class="swiper-wrapper content_box_wrap">
+                        <!-- Slides -->
+                        <div class="content_box swiper-slide">
+                            <div class="image_box"></div>
+                            <div class="content_title">개발자 원어민 영어 회화 과외</div>
+                            <div>
+                                <p class="content_text">안녕하세요! 혹시 개발관련 영어회화 과
+                                    외에 관심 있는 사람있을까요? 전 개발자
+                                    로 일했고 한국어 보다 영어를 잘하는 ...</p>
+                            </div>
+                        </div>
+
+                        <div class="content_box swiper-slide">
+                            <div class="image_box"></div>
+                            <div class="content_title">개발자 원어민 영어 회화 과외</div>
+                            <div>
+                                <p class="content_text">안녕하세요! 혹시 개발관련 영어회화 과
+                                    외에 관심 있는 사람있을까요? 전 개발자
+                                    로 일했고 한국어 보다 영어를 잘하는 ...</p>
+                            </div>
+                        </div>
+
+                        <div class="content_box swiper-slide">
+                            <div class="image_box"></div>
+                            <div class="content_title">개발자 원어민 영어 회화 과외</div>
+                            <div>
+                                <p class="content_text">안녕하세요! 혹시 개발관련 영어회화 과
+                                    외에 관심 있는 사람있을까요? 전 개발자
+                                    로 일했고 한국어 보다 영어를 잘하는 ...</p>
+                            </div>
+                        </div>
+
+                        <div class="content_box swiper-slide">
+                            <div class="image_box"></div>
+                            <div class="content_title">개발자 원어민 영어 회화 과외</div>
+                            <div>
+                                <p class="content_text">안녕하세요! 혹시 개발관련 영어회화 과
+                                    외에 관심 있는 사람있을까요? 전 개발자
+                                    로 일했고 한국어 보다 영어를 잘하는 ...</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="content_box">
-                    <div class="image_box"></div>
-                    <div class="content_title">개발자 원어민 영어 회화 과외</div>
-                    <div>
-                        <p class="content_text">안녕하세요! 혹시 개발관련 영어회화 과
-                            외에 관심 있는 사람있을까요? 전 개발자
-                            로 일했고 한국어 보다 영어를 잘하는 ...</p>
-                    </div>
-                </div>
-                <div class="content_box">
-                    <div class="image_box"></div>
-                    <div class="content_title">개발자 원어민 영어 회화 과외</div>
-                    <div>
-                        <p class="content_text">안녕하세요! 혹시 개발관련 영어회화 과
-                            외에 관심 있는 사람있을까요? 전 개발자
-                            로 일했고 한국어 보다 영어를 잘하는 ...</p>
-                    </div>
-                </div>
-                <div class="content_box">
-                    <div class="image_box"></div>
-                    <div class="content_title">개발자 원어민 영어 회화 과외</div>
-                    <div>
-                        <p class="content_text">안녕하세요! 혹시 개발관련 영어회화 과
-                            외에 관심 있는 사람있을까요? 전 개발자
-                            로 일했고 한국어 보다 영어를 잘하는 ...</p>
-                    </div>
-                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev" style="left: -4%;"></div>
+                <div class="swiper-button-next" style="right: -4%"></div>
             </div>
         </div>
     </div>
@@ -157,6 +153,61 @@
     <footer>
 
     </footer>
+
+    <div class="modal_overlay">
+        <div style="position: absolute;">
+            <div id="modal_close">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                         fill="#FFFFFF">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal_window">
+                <div class="form_container">
+                    <form id="login_form">
+                        <div>
+                            <label for="id_input">아이디</label>
+                            <input id="id_input" name="id" type="text" />
+                        </div>
+                        <div>
+                            <label for="pw_input">비밀번호</label>
+                            <input id="pw_input" name="password" type="text" />
+                        </div>
+                        <div>
+                            <div class="form_submit_btn">로그인</div>
+                        </div>
+                    </form>
+
+                    <form id="register_form">
+                        <div>
+                            <label for="id_input">아이디</label>
+                            <input id="id_input" name="id" type="text" />
+                        </div>
+                        <div>
+                            <label for="pw_input">비밀번호</label>
+                            <input id="pw_input" name="password" type="text" />
+                        </div>
+                        <div>
+                            <label for="email_input">이메일</label>
+                            <input id="email_input" name="email" type="text" />
+                        </div>
+                        <div>
+                            <div class="form_submit_btn" id="register_form_submit">회원가입</div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="register_container">
+                    <div id="move_register_form">회원가입</div>
+                    <div>비밀번호 찾기</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <script>
     let firstSwiper = new Swiper('.first-swiper', {
@@ -168,12 +219,6 @@
             el: '.swiper-pagination',
         },
 
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
         autoplay: {
             delay: 5000
         }
@@ -182,20 +227,87 @@
     let secondSwiper = new Swiper('.second-swiper', {
         // Optional parameters
         loop: false,
-        spaceBetween: 30,
-        effect: 'fade',
 
         scrollbar: {
             el: '.swiper-scrollbar',
         },
+
+        spaceBetween: 30,
+        effect: 'fade',
         fadeEffect: {
             crossFade: true
         },
-        autoplay: {
-            delay: 3000
-        }
     });
 
+    let thirdSwiper = new Swiper('.third-swiper', {
+        // Optional parameters
+        loop: true,
+
+        slidesPerView: 4,
+        spaceBetween: 30,
+        freeMode: true,
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        breakpoints: {
+            370: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,  //브라우저가 768보다 클 때
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 4,  //브라우저가 1024보다 클 때
+                spaceBetween: 50,
+            },
+        },
+
+    });
+</script>
+
+<script>
+    //open login modal
+    document.getElementById("login_btn").addEventListener("click", function () {
+        document.getElementsByClassName("modal_overlay")[0].style.display = "flex";
+    });
+
+    //close login modal
+    document.getElementById("modal_close").addEventListener("click", function () {
+        document.getElementsByClassName("modal_overlay")[0].style.display = "none";
+        resetSignForm();
+    });
+
+    //move to register form
+    document.getElementById("move_register_form").addEventListener("click", function () {
+        document.getElementById("login_form").style.display = "none";
+        document.getElementById("register_form").style.display = "flex";
+    });
+
+    //register
+    document.getElementById("register_form_submit").addEventListener("click", function () {
+        let formData = new FormData(document.getElementById("register_form"));
+
+        $.ajax({
+            url: "http://localhost:9050/register",
+            method: "POST",
+            contentType: false,
+            processData: false,
+            data: formData,
+            success: result => console.log(result),
+            error: error => console.log(error)
+        });
+    });
+
+    // reset sign form
+    function resetSignForm() {
+        document.getElementById("login_form").style.display = "flex";
+        document.getElementById("register_form").style.display = "none";
+    }
 </script>
 </body>
 

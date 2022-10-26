@@ -1,3 +1,4 @@
+
 .modal_overlay{
     position: fixed;
     top: 0;
@@ -16,13 +17,12 @@
 }
 
 .modal_window{
-    padding: 20px;
+    padding: 30px;
     border-radius: 5px;
-
     background-color: white;
 }
 
-.modal_close{
+#modal_close{
     position: absolute;
     width: 30px;
     height: 30px;
@@ -33,13 +33,71 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+
 }
-.modal_close button {
+#modal_close button {
     border: none;
     background: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.modal_close:hover{
+#modal_close:hover{
     background-color: rgba(255, 255, 255, 0.3);
+}
+
+.form_submit_btn{
+    width:100%;
+    height: 30px;
+    color:white;
+    border-radius: 5px;
+    background-color: #1DC078;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+}
+
+.form_container > form{
+    display: flex;
+    gap:12px;
+    flex-direction: column;
+}
+
+.form_container > form label{
+    font-size: 14px;
+}
+
+.form_container > form > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.form_container > form input {
+    width: 260px;
+    height: 30px;
+    padding: 0px 8px;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 5px;
+}
+
+.register_container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+    margin-top:20px;
+}
+
+.register_container > div{
+    color:#858585;
+    cursor: pointer;
+}
+
+#register_form{
+    display: none;
 }
