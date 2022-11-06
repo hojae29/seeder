@@ -9,3 +9,10 @@ naver:
     search:
       image: https://openapi.naver.com/v1/search/image
       local: https://openapi.naver.com/v1/search/local.json
+
+
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/seeder
+    username: root
+    password: 1234
